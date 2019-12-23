@@ -1,16 +1,27 @@
 // include express to set up the server
 const express = require("express");
 const port = 7999;
-const app= express()
+const app= express();
+const expressLayouts= require("express-ejs-layouts");
 
-//set up the view engine
-app.set('view engine','ejs');
-app.set('views', './views');
+
+//static files
+app.use(express.static("./assets"));
+
+// using layouts in the javascript backend
+
+app.use(expressLayouts);
+
+
+
 
 
 //set up routers 
 app.use('/', require('./routes'));
 
+//set up the view engine
+app.set('view engine','ejs');
+app.set('views', './views');
 
 app.listen(port, function(err){
     if(err){

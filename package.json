@@ -1,7 +1,7 @@
 {
   "name": "foocheck",
   "version": "1.0.0",
-  "description": "A system for a health worker to monitor and trigger alarm if some woman and child have not come up for a dose in poshak abhiyan by Indian government",
+  "description": "A system for a health worker to monitor and trigger alarm if some woman and child have not come up for a dose in poshan abhiyan by Indian government",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,6 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "mongoose": "^5.8.2"
   }
 }
