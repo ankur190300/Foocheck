@@ -1,1 +1,17 @@
-<h5>header</h5>
+<% if (locals.user) { %>
+    <li>
+        <%= user.name %>
+    </li>
+    <li>
+        <a href= "/workers/destroy-session" > Sign-out</a>
+    </li>
+<% } else  { %>
+    <li>
+        <a href= "/workers/sign-up" > Sign-up</a>
+    </li>
+    <li>
+        <a href= "/workers/sign-in" > Sign-in</a>
+    </li>
+
+<% } %>
+
